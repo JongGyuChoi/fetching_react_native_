@@ -14,7 +14,7 @@ export const getMovieList = async (number) => {
 export const getMovieDetail = async (id) => {
   try {
     const res = await axios.get(
-      ` https://yts.mx/api/v2/movie_details.json?movie_id=${id}`,
+      `https://yts.mx/api/v2/movie_details.json?movie_id=${id}`,
     );
     return res;
   } catch (error) {
